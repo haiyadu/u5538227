@@ -26,29 +26,19 @@ def word_filter_counter(text, filter_words):
     # Implement the logic to filter words and count their occurrences
     pass  # Delete this after implementing some code inside this function
 
+
 def word_filter_counter(text, filter_words):
     text=text.lower()
     words=text.split()
     word_count={}
     for i in words:
+        i = i.strip(' , .!? "')
         if i in filter_words:
             if i in word_count:
-                word_count[i] +=1
+                word_count[i] += 1 
             else:
-                word_count[i] =1
-    return word_count        
-                
-
-    
-
-
-
-
-
-
-
-
-
+                word_count[i] = 1
+    return word_count
 
 
 # Test cases
