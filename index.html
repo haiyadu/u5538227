@@ -4,84 +4,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramen</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <title>Campus Restaurant</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <nav id="breadcrumbs">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">cultural </a></li>
-            <li><a href="#">customer review</a></li>
-        </ul>
-    </nav>
 
-    <h1 class="product-title">Warwick Ramen Stand</h1>
-
-    <section class="product-image">
-        <img src="/images/images.jpeg" width="300px" alt="Ramen">
-
-</html>
-<html>
-
-<head>
-    <title>Warwick Ramen Stand</title>
-</head>
-
-<body>
     <header>
-        <h1>Welcome to Warwick Ramen Stand</h1>
+        <h1>Campus Dining Facilities</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Place Order</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+        </nav>
+
+        <h1 class="product-title">Warwick Chinese Restaurant</h1>
+
+        <section class="product-image">
+            <img src="/images/ 过年中餐.jpg" width="300px" alt="Chinese food">
+
     </header>
-    <section>
-        <h2>Our Menu</h2>
-        <ul>
-            <li>
-                <h3>Tonkotsu Ramen</h3>
-                <img src="images/Tonkotsu.jpg" alt="Tonkotsu Ramen">
-            </li>
-            <li>
-                <h3>Shoyu Ramen</h3>
-                <img src="images/Shoyu.jpg" alt="Shoyu Ramen">
-            </li>
-            <li>
-                <h3>Miso Ramen</h3>
-                <img src="images/Miso.jpg" alt="Miso Ramen">
-            </li>
-            <li>
-                <h3>Veggie Ramen</h3>
-                <img src="images/Veggie.jpg" alt="Veggie Ramen">
-            </li>
-        </ul>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu-item">
+            <img src="images/menu.jpeg" alt="menu">
+            <h3>Menu</h3>
+            <p>Our menu includes several categories.</p>
+            <button>Details Page</button>
+        </div>
+        <h2>Recommended Dishes</h2>
+        <div class="menu-item">
+            <img src="images/ 五花肉.jpg" alt="Food 2">
+            <h3>Roast pork</h3>
+            <p>Smoked pork with vegetables ¥20</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="images/ 清汤火锅.jpg" alt="Food 2">
+            <h3>Seafood pot</h3>
+            <p>Fresh seafood with noodles ¥26</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="images/ 虾仁豆腐.jpg" alt="Food 2">
+            <h3>Shrimp and tofu</h3>
+            <p>stir-fried tofu with shrimp ¥19</p>
+            <button>Add to Cart</button>
+        </div>
     </section>
-    <section>
-        <h2>Opening Hours</h2>
-        <table>
-            <tr>
-                <th>Day</th>
-                <th>Opening Time</th>
-                <th>Closing Time</th>
-            </tr>
-            <tr>
-                <td>Monday - Friday</td>
-                <td>11:00 AM</td>
-                <td>10:00 PM</td>
-            </tr>
-            <tr>
-                <td>Saturday</td>
-                <td>12:00 PM</td>
-                <td>11:00 PM</td>
-            </tr>
-            <tr>
-                <td>Sunday</td>
-                <td>Closed</td>
-                <td>Closed</td>
-            </tr>
-        </table>
+
+    <section id="login">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
     </section>
+
+    <section id="order">
+        <h2>Place Order</h2>
+        <form action="order.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="items">Selected Items:</label>
+            <textarea id="items" name="items" readonly></textarea>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@campusrestaurant.com</p>
+        <p>Phone: 123-456-7890</p>
+    </section>
+
     <footer>
-        <p>Contact us at ramen@warwick.ac.uk</p>
+        <p>&copy; 2024 Campus Restaurant. All rights reserved.</p>
     </footer>
+
+    <script src="scripts.js"></script>
+
 </body>
 
 </html>
