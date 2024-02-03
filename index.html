@@ -5,100 +5,229 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus Restaurant</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />"
     <link rel="stylesheet" href="css/styles.css">
+
+
 </head>
 
 <body>
 
     <header>
-        <h1>Campus Dining Facilities</h1>
-        <nav>
-            <ul>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#order">Place Order</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="#login">Login</a></li>
-            </ul>
-        </nav>
+        <a href="#" class="logo"><i class="fas-fa-untensils"></i>warwick Chinese Restaurant</a>
+
+        <nav class="navbar">
+            <a class="active" href="#home">home</a>
+            <a href="#dishes">dishes</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#review">review</a>
+            <a href="#order">order</a>
         </nav>
 
-        <h1 class="product-title">Warwick Chinese Restaurant</h1>
-
-        <section class="product-image">
-            <img src="/images/ 过年中餐.jpg" width="300px" alt="Chinese food">
+        <div class="icons">
+            <i class="fas fa-menu-bars" id="bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
 
     </header>
 
-    <section id="menu">
-        <h2>Menu</h2>
-        <div class="menu-item">
-            <img src="images/menu.jpeg" alt="menu">
-            <h3>Menu</h3>
-            <p>Our menu includes several categories.</p>
-            <button>Details Page</button>
-        </div>
-        <h2>Recommended Dishes</h2>
-        <div class="menu-item">
-            <img src="images/ 五花肉.jpg" alt="Food 2">
-            <h3>Roast pork</h3>
-            <p>Smoked pork with vegetables ¥20</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="menu-item">
-            <img src="images/ 清汤火锅.jpg" alt="Food 2">
-            <h3>Seafood pot</h3>
-            <p>Fresh seafood with noodles ¥26</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="menu-item">
-            <img src="images/ 虾仁豆腐.jpg" alt="Food 2">
-            <h3>Shrimp and tofu</h3>
-            <p>stir-fried tofu with shrimp ¥19</p>
-            <button>Add to Cart</button>
-        </div>
-    </section>
+    <div class="icons">
 
-    <section id="login">
-        <h2>Login</h2>
-        <form action="login.php" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+    </div>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+    <section class="home" id="home">
 
-            <button type="submit">Login</button>
-        </form>
-    </section>
+        <div class="swiper mySwiper home-slider">
 
-    <section id="order">
-        <h2>Place Order</h2>
-        <form action="order.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <div class="swiper-wrapper wrapeer">
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>smoked pork</h3>
+                        <p>smoked pork with vegetables</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/ 五花肉.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="swiper-slide slide">
+                            <div class="content">
+                                <span>our special dish</span>
+                                <h3>tofu with shrimp</h3>
+                                <p>stir-fried tofu with shrimp</p>
+                                <a href="#" class="btn">order now</a>
+                            </div>
+                            <div class="image">
+                                <img src="images/ 虾仁豆腐.jpg" alt="">
+                            </div>
+                            <div>
 
-            <label for="items">Selected Items:</label>
-            <textarea id="items" name="items" readonly></textarea>
+                                <div class="swiper-slide slide">
+                                    <div class="content">
+                                        <span>our special dish</span>
+                                        <h3>seafood pot</h3>
+                                        <p>Fresh seafood with noodles</p>
+                                        <a href="#" class="btn">order now</a>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/ 清汤火锅.jpg" alt="">
+                                    </div>
+                                    <div>
 
-            <button type="submit">Submit Order</button>
-        </form>
-    </section>
+                                        <div class="swiper-pagination"></div>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: info@campusrestaurant.com</p>
-        <p>Phone: 123-456-7890</p>
-    </section>
+                                        <section class="dishes" id="dishes">
 
-    <footer>
-        <p>&copy; 2024 Campus Restaurant. All rights reserved.</p>
-    </footer>
+                                            <h3 class="sub-heading"> our dishes </h3>
+                                            <h1 class="heading"> popular dishes </h3>
 
-    <script src="scripts.js"></script>
+                                                <div class="box-container">
 
-</body>
+                                                    <div class="box">
+                                                        <a href="#" class="fas fa-heart"></a>
+                                                        <a href="#" class="fas fa-eye"></a>
+                                                        <img src="images/ 饺子.jpg" alt="">
+                                                        <h3>tasty food</h3>
+                                                        <div class="stars">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star-half-alt"></i>
+                                                        </div>
+                                                        <span>$12.6</span>
+                                                        <a href="#" class="btn">add to cart</a>
 
-</html>
+                                                        <div class="box">
+                                                            <a href="#" class="fas fa-heart"></a>
+                                                            <a href="#" class="fas fa-eye"></a>
+                                                            <img src="images/荞麦面.jpg" alt="">
+                                                            <h3>tasty food</h3>
+                                                            <div class="stars">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star-half-alt"></i>
+                                                            </div>
+                                                            <span>$9.7</span>
+                                                            <a href="#" class="btn">add to cart</a>
+
+                                                            <div class="box">
+                                                                <a href="#" class="fas fa-heart"></a>
+                                                                <a href="#" class="fas fa-eye"></a>
+                                                                <img src="images/ 蔬菜拌饭.jpg" alt="">
+                                                                <h3>tasty food</h3>
+                                                                <div class="stars">
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star-half-alt"></i>
+                                                                </div>
+                                                                <span>$8.7</span>
+                                                                <a href="#" class="btn">add to cart</a>
+
+                                                                <div class="box">
+                                                                    <a href="#" class="fas fa-heart"></a>
+                                                                    <a href="#" class="fas fa-eye"></a>
+                                                                    <img src="images/ 蔬菜水果沙拉.jpg" alt="">
+                                                                    <h3>tasty food</h3>
+                                                                    <div class="stars">
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star-half-alt"></i>
+                                                                    </div>
+                                                                    <span>$7.4</span>
+                                                                    <a href="#" class="btn">add to cart</a>
+
+                                                                    <div class="box">
+                                                                        <a href="#" class="fas fa-heart"></a>
+                                                                        <a href="#" class="fas fa-eye"></a>
+                                                                        <img src="images/ 桃子甜品.jpg" alt="">
+                                                                        <h3>tasty food</h3>
+                                                                        <div class="stars">
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star"></i>
+                                                                            <i class="fas fa-star-half-alt"></i>
+                                                                        </div>
+                                                                        <span>$9.6</span>
+                                                                        <a href="#" class="btn">add to cart</a>
+
+                                                                        <section class="order" id="order">
+
+                                                                            <h3 class="sub-heading">order now</h3>
+                                                                            <h1 class="heading">free and fast</h1>
+
+                                                                            <form action="">
+
+                                                                                <div class="inputBox">
+                                                                                    <div class="input">
+                                                                                        <span>your name</span>
+                                                                                        <input type="text"
+                                                                                            placeholder="enter your name">
+                                                                                    </div>
+                                                                                    <div class="input">
+                                                                                        <span>your number</span>
+                                                                                        <input type="number"
+                                                                                            placeholder="enter your number">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="input">
+                                                                                    <span>your order</span>
+                                                                                    <input type="text"
+                                                                                        placeholder="enter food name">
+                                                                                </div>
+                                                                                <div class="input">
+                                                                                    <span>additinal food</span>
+                                                                                    <input type="test"
+                                                                                        placeholder="extra with food">
+                                                                                </div>
+                                                                                <div class="inputBox">
+                                                                                    <div class="input">
+                                                                                        <span>how much</span>
+                                                                                        <input type="number"
+                                                                                            placeholder="how many orders">
+                                                                                    </div>
+                                                                                    <div class="input">
+                                                                                        <span>date and time</span>
+                                                                                        <input type="datetime-local">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="inputBox">
+                                                                                    <div class="input">
+                                                                                        <span>your address</span>
+                                                                                        <textarea name=""
+                                                                                            placeorder="enter your address"
+                                                                                            id="" cols="30"
+                                                                                            row="10"></textarea>
+                                                                                    </div>
+                                                                                    <div class="input">
+                                                                                        <span>your message</span>
+                                                                                        <textarea name=""
+                                                                                            placeorder="enter your message"
+                                                                                            id="" cols="30"
+                                                                                            row="10"></textarea>
+                                                                                    </div>
+
+                                                                                    <input type="submit"
+                                                                                        value="order now" class="btn">
+
+                                                                            </form>
+
+
+
+                                                                        </section>
+                                                                        <script
+                                                                            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+                                                                        <script src="js/script.js"></script>
