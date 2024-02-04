@@ -3,231 +3,630 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Restaurant</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />"
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Warwick Chinese restaurant</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
+    <!-- header section starts -->
+
     <header>
-        <a href="#" class="logo"><i class="fas-fa-untensils"></i>warwick Chinese Restaurant</a>
 
-        <nav class="navbar">
-            <a class="active" href="#home">home</a>
-            <a href="#dishes">dishes</a>
-            <a href="#about">about</a>
-            <a href="#menu">menu</a>
-            <a href="#review">review</a>
-            <a href="#order">order</a>
-        </nav>
+        <section class="flex">
 
-        <div class="icons">
-            <i class="fas fa-menu-bars" id="bars"></i>
-            <i class="fas fa-search" id="search-icon"></i>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-shopping-cart"></a>
-        </div>
+            <a href="#" class="logo"><i class="fas fa-utensils"></i> Warwick Chinese Restaurant.</a>
+
+            <nav class="navbar">
+                <a class="active" href="#home">home</a>
+                <a href="#dishes">dishes</a>
+                <a href="#about">about</a>
+                <a href="#menu">menu</a>
+                <a href="#review">review</a>
+                <a href="#order">order</a>
+            </nav>
+
+            <div class="icons">
+                <i class="fas fa-bars" id="menu-bars"></i>
+                <i class="fas fa-search" id="search-icon"></i>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+            </div>
+
+        </section>
 
     </header>
 
-    <div class="icons">
+    <!-- header section ends-->
+
+    <!-- search form  -->
+
+    <form action="" id="search-form">
+        <input type="search" placeholder="search here..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!-- home section starts  -->
+
+    <div class="container">
+
+        <section class="home" id="home">
+
+            <div class="swiper home-slider">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide slide">
+                        <div class="content">
+                            <span>our special dish</span>
+                            <h3>Pork Meatball Soup</h3>
+                            <p>Using pork as the main ingredient with spices and seasonings, the meatballs are full and
+                                firm with a sweet and refreshing soup base.</p>
+                            <a href="#" class="btn">order now</a>
+                        </div>
+                        <div class="image">
+                            <img src="images/Pork Meatball Soup.JPG" alt="">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <div class="content">
+                            <span>our special dish</span>
+                            <h3>shrimp and tofu</h3>
+                            <p>Tender prawns are cleverly paired with soft tofu to present a rich texture and fresh
+                                flavour.</p>
+                            <a href="#" class="btn">order now</a>
+                        </div>
+                        <div class="image">
+                            <img src="images/shrimp and tofu.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <div class="content">
+                            <span>our special dish</span>
+                            <h3>seafood hotpot</h3>
+                            <p>All types of fresh seafood are kept in their original flavour in the steaming hot soup,
+                                ensuring the best taste and nutritional value.</p>
+                            <a href="#" class="btn">order now</a>
+                        </div>
+                        <div class="image">
+                            <img src="images/ seafood hotpot.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </section>
 
     </div>
 
-    <section class="home" id="home">
+    <!-- home section ends -->
 
-        <div class="swiper mySwiper home-slider">
+    <!-- dishes section starts  -->
 
-            <div class="swiper-wrapper wrapeer">
+    <div class="container">
 
-                <div class="swiper-slide slide">
-                    <div class="content">
-                        <span>our special dish</span>
-                        <h3>smoked pork</h3>
-                        <p>smoked pork with vegetables</p>
-                        <a href="#" class="btn">order now</a>
+        <section class="dishes" id="dishes">
+
+            <h3 class="sub-heading"> our dishes </h3>
+            <h1 class="heading"> popular dishes </h1>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                    <img src="images/Stir Fried Beef with Green Pepper.JPG" alt="">
+                    <h3>Stir Fried Beef with Green Pepper</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
+                    <span>$15.9</span>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <div class="box">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                    <img src="images/crispy salted chicken nuggets.JPG" alt="">
+                    <h3>crispy salted chicken nuggets</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>$12.99</span>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <div class="box">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                    <img src="images/Beef Brisket with Tomatoes.JPG" alt="">
+                    <h3>Beef Brisket with Tomatoes</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span>$18.99</span>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- dishes section ends -->
+
+    <!-- about section starts  -->
+
+    <div class="container">
+
+        <section class="about" id="about">
+
+            <h3 class="sub-heading"> about us </h3>
+            <h1 class="heading"> why choose us? </h1>
+
+            <div class="row">
+
+                <div class="image">
+                    <img src="images/about-img.png" alt="">
+                </div>
+
+                <div class="content">
+                    <h3>The best Chinese restaurant in the school</h3>
+                    <p>Our Chinese restaurant is not only a paradise for the taste buds, but also a gathering place for
+                        the fusion of Chinese culinary culture. From traditional classics to creative modern
+                        innovations, each dish is meticulously prepared to maintain its original flavour while
+                        incorporating creative and western elements.</p>
+                    <p> It is the ideal place for students to gather for meals and celebrations.</p>
+                    <div class="icons-container">
+                        <div class="icons">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>free delivery</span>
+                        </div>
+                        <div class="icons">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>easy payments</span>
+                        </div>
+                        <div class="icons">
+                            <i class="fas fa-headset"></i>
+                            <span>24/7 service</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">learn more</a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- about section ends -->
+
+    <!-- menu section starts  -->
+
+    <div class="container">
+
+        <section class="menu" id="menu">
+
+            <h3 class="sub-heading"> our menu </h3>
+            <h1 class="heading"> today's speciality </h1>
+
+            <div class="box-container">
+
+                <div class="box">
                     <div class="image">
-                        <img src="images/ 五花肉.jpg" alt="">
+                        <img src="images/ mushroom soup.JPG" alt="">
+                        <a href="#" class="fas fa-heart"></a>
                     </div>
-                    <div>
-                        <div class="swiper-slide slide">
-                            <div class="content">
-                                <span>our special dish</span>
-                                <h3>tofu with shrimp</h3>
-                                <p>stir-fried tofu with shrimp</p>
-                                <a href="#" class="btn">order now</a>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>mushroom soup</h3>
+                        <p>Fresh assorted mushrooms are the main ingredient with other vegetables and seasonings.</p>
+                        <a href="#" class="btn">add to cart</a>
+                        <span class="price">$11.99</span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="images/ vegetable salad.JPG" alt="">
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>vegetable salad</h3>
+                        <p>Includes a variety of seasonal vegetables such as tomatoes, cucumbers and carrots, making it
+                            a refreshing and healthy food choice.</p>
+                        <a href="#" class="btn">add to cart</a>
+                        <span class="price">$6.99</span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="images/ Peach Dessert.JPG" alt="">
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>Peach Dessert</h3>
+                        <p>Fresh peaches are chosen as the main ingredient and paired with nutritious nuts to present a
+                            creative and layered dessert.</p>
+                        <a href="#" class="btn">add to cart</a>
+                        <span class="price">$8.99</span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="images/beef bibimbap.JPG" alt="">
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>beef bibimbap</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                        <a href="#" class="btn">add to cart</a>
+                        <span class="price">$12.99</span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="images/stir-fried tofu.JPG" alt="">
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>stir-fried tofu</h3>
+                        <p>The tofu is fermented, then deep-fried until golden and crispy, and finally served with a
+                            special stinky sauce to create its unique flavour.</p>
+                        <a href="#" class="btn">add to cart</a>
+                        <span class="price">$6.99</span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="images/ smoked pork.JPG" alt="">
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>smoked pork</h3>
+                        <p>High-quality pork is selected, carefully handled and cured, and then subjected to a
+                            slow-smoking process to make the meat more tender and juicy.</p>
+                        <a href="#" class="btn">add to cart</a>
+                        <span class="price">$15.99</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- menu section ends -->
+
+    <!-- review section starts  -->
+
+    <div class="container">
+
+        <section class="review" id="review">
+
+            <h3 class="sub-heading"> customer's review </h3>
+            <h1 class="heading"> what they say </h1>
+
+            <div class="swiper review-slider">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide slide">
+                        <i class="fas fa-quote-right"></i>
+                        <div class="user">
+                            <div class="user-info">
+                                <h3>zizhen wu</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                             </div>
-                            <div class="image">
-                                <img src="images/ 虾仁豆腐.jpg" alt="">
+                        </div>
+                        <p>This Chinese restaurant is really a great blessing for living overseas!
+                            The menu has our familiar hometown dishes that taste so authentic that I can find a taste of
+                            home even in a foreign country.
+                            Every time we go in, we feel like we are back home, and the staff are very kind and
+                            attentive, making us feel more at home.</p>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <i class="fas fa-quote-right"></i>
+                        <div class="user">
+                            <div class="user-info">
+                                <h3>Alex Thompson</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
                             </div>
-                            <div>
+                        </div>
+                        <p>As a foreign student who was completely new to Chinese cuisine, this Chinese restaurant
+                            really opened the door to Chinese culture
+                            for me. The menu has a wide variety of choices and every dish is a new adventure.
+                            I love the waiters here, they are always willing to explain the origin and uniqueness of the
+                            dishes
+                            so that I can enjoy the flavours and learn more about China at the same time.</p>
+                    </div>
 
-                                <div class="swiper-slide slide">
-                                    <div class="content">
-                                        <span>our special dish</span>
-                                        <h3>seafood pot</h3>
-                                        <p>Fresh seafood with noodles</p>
-                                        <a href="#" class="btn">order now</a>
-                                    </div>
-                                    <div class="image">
-                                        <img src="images/ 清汤火锅.jpg" alt="">
-                                    </div>
-                                    <div>
+                    <div class="swiper-slide slide">
+                        <i class="fas fa-quote-right"></i>
+                        <div class="user">
+                            <div class="user-info">
+                                <h3>Olivia Anderson</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>The Chinese restaurant here is a daily must-visit for me on campus. The food is varied and
+                            the flavours of each dish are authentic,
+                            allowing me to enjoy the pleasure of eating in a foreign country.
+                            The staff are also very accommodating to students of different cultures, which makes me feel
+                            like I am part of a big international family.</p>
+                    </div>
 
-                                        <div class="swiper-pagination"></div>
+                    <div class="swiper-slide slide">
+                        <i class="fas fa-quote-right"></i>
+                        <div class="user">
+                            <div class="user-info">
+                                <h3>Yulin Zhang</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>I found that this Chinese restaurant became an ideal place for me to meet up with my friends.
+                            Not only because of the delicious food, but also because the place is full of laughter.
+                            Every time I dine here with my friends,
+                            it becomes a wonderful memory.
+                            This Chinese restaurant really breaks down cultural barriers and makes me feel the power of
+                            friendship and food across borders.</p>
+                    </div>
 
-                                        <section class="dishes" id="dishes">
+                </div>
 
-                                            <h3 class="sub-heading"> our dishes </h3>
-                                            <h1 class="heading"> popular dishes </h3>
+                <div class="swiper-pagination"></div>
 
-                                                <div class="box-container">
+            </div>
 
-                                                    <div class="box">
-                                                        <a href="#" class="fas fa-heart"></a>
-                                                        <a href="#" class="fas fa-eye"></a>
-                                                        <img src="images/ 饺子.jpg" alt="">
-                                                        <h3>tasty food</h3>
-                                                        <div class="stars">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star-half-alt"></i>
-                                                        </div>
-                                                        <span>$12.6</span>
-                                                        <a href="#" class="btn">add to cart</a>
+        </section>
 
-                                                        <div class="box">
-                                                            <a href="#" class="fas fa-heart"></a>
-                                                            <a href="#" class="fas fa-eye"></a>
-                                                            <img src="images/荞麦面.jpg" alt="">
-                                                            <h3>tasty food</h3>
-                                                            <div class="stars">
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star-half-alt"></i>
-                                                            </div>
-                                                            <span>$9.7</span>
-                                                            <a href="#" class="btn">add to cart</a>
+    </div>
 
-                                                            <div class="box">
-                                                                <a href="#" class="fas fa-heart"></a>
-                                                                <a href="#" class="fas fa-eye"></a>
-                                                                <img src="images/ 蔬菜拌饭.jpg" alt="">
-                                                                <h3>tasty food</h3>
-                                                                <div class="stars">
-                                                                    <i class="fas fa-star"></i>
-                                                                    <i class="fas fa-star"></i>
-                                                                    <i class="fas fa-star"></i>
-                                                                    <i class="fas fa-star"></i>
-                                                                    <i class="fas fa-star-half-alt"></i>
-                                                                </div>
-                                                                <span>$8.7</span>
-                                                                <a href="#" class="btn">add to cart</a>
+    <!-- review section ends -->
 
-                                                                <div class="box">
-                                                                    <a href="#" class="fas fa-heart"></a>
-                                                                    <a href="#" class="fas fa-eye"></a>
-                                                                    <img src="images/ 蔬菜水果沙拉.jpg" alt="">
-                                                                    <h3>tasty food</h3>
-                                                                    <div class="stars">
-                                                                        <i class="fas fa-star"></i>
-                                                                        <i class="fas fa-star"></i>
-                                                                        <i class="fas fa-star"></i>
-                                                                        <i class="fas fa-star"></i>
-                                                                        <i class="fas fa-star-half-alt"></i>
-                                                                    </div>
-                                                                    <span>$7.4</span>
-                                                                    <a href="#" class="btn">add to cart</a>
+    <!-- order section starts  -->
 
-                                                                    <div class="box">
-                                                                        <a href="#" class="fas fa-heart"></a>
-                                                                        <a href="#" class="fas fa-eye"></a>
-                                                                        <img src="images/ 桃子甜品.jpg" alt="">
-                                                                        <h3>tasty food</h3>
-                                                                        <div class="stars">
-                                                                            <i class="fas fa-star"></i>
-                                                                            <i class="fas fa-star"></i>
-                                                                            <i class="fas fa-star"></i>
-                                                                            <i class="fas fa-star"></i>
-                                                                            <i class="fas fa-star-half-alt"></i>
-                                                                        </div>
-                                                                        <span>$9.6</span>
-                                                                        <a href="#" class="btn">add to cart</a>
+    <div class="container">
 
-                                                                        <section class="order" id="order">
+        <section class="order" id="order">
 
-                                                                            <h3 class="sub-heading">order now</h3>
-                                                                            <h1 class="heading">free and fast</h1>
+            <h3 class="sub-heading"> order now </h3>
+            <h1 class="heading"> free and fast </h1>
 
-                                                                            <form action="">
+            <form action="">
 
-                                                                                <div class="inputBox">
-                                                                                    <div class="input">
-                                                                                        <span>your name</span>
-                                                                                        <input type="text"
-                                                                                            placeholder="enter your name">
-                                                                                    </div>
-                                                                                    <div class="input">
-                                                                                        <span>your number</span>
-                                                                                        <input type="number"
-                                                                                            placeholder="enter your number">
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="input">
-                                                                                    <span>your order</span>
-                                                                                    <input type="text"
-                                                                                        placeholder="enter food name">
-                                                                                </div>
-                                                                                <div class="input">
-                                                                                    <span>additinal food</span>
-                                                                                    <input type="test"
-                                                                                        placeholder="extra with food">
-                                                                                </div>
-                                                                                <div class="inputBox">
-                                                                                    <div class="input">
-                                                                                        <span>how much</span>
-                                                                                        <input type="number"
-                                                                                            placeholder="how many orders">
-                                                                                    </div>
-                                                                                    <div class="input">
-                                                                                        <span>date and time</span>
-                                                                                        <input type="datetime-local">
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="inputBox">
-                                                                                    <div class="input">
-                                                                                        <span>your address</span>
-                                                                                        <textarea name=""
-                                                                                            placeorder="enter your address"
-                                                                                            id="" cols="30"
-                                                                                            row="10"></textarea>
-                                                                                    </div>
-                                                                                    <div class="input">
-                                                                                        <span>your message</span>
-                                                                                        <textarea name=""
-                                                                                            placeorder="enter your message"
-                                                                                            id="" cols="30"
-                                                                                            row="10"></textarea>
-                                                                                    </div>
+                <div class="inputBox">
+                    <div class="input">
+                        <span>your name</span>
+                        <input type="text" placeholder="enter your name">
+                    </div>
+                    <div class="input">
+                        <span>your order number</span>
+                        <input type="text" placeholder="enter your number">
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <div class="input">
+                        <span>your student number</span>
+                        <input type="text" placeholder="enter student number">
+                    </div>
+                    <div class="input">
+                        <span>additional food</span>
+                        <input type="test" placeholder="extra with food">
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <div class="input">
+                        <span>your discount code</span>
+                        <input type="text" placeholder="enter your code">
+                    </div>
+                    <div class="input">
+                        <span>date and time</span>
+                        <input type="datetime-local">
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <div class="input">
+                        <span>your address</span>
+                        <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="input">
+                        <span>your message</span>
+                        <textarea name="" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
 
-                                                                                    <input type="submit"
-                                                                                        value="order now" class="btn">
+                <input type="submit" value="order now" class="btn">
 
-                                                                            </form>
+            </form>
+
+        </section>
+
+    </div>
+
+    <!-- order section ends -->
+
+    <!-- footer section starts  -->
+
+    <div class="container">
+
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>locations</h3>
+                    <a href="#">Coventry CV4 7AL</a>
+                </div>
+
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#">home</a>
+                    <a href="#">dishes</a>
+                    <a href="#">about</a>
+                    <a href="#">menu</a>
+                    <a href="#">reivew</a>
+                    <a href="#">order</a>
+                </div>
+
+                <div class="box">
+                    <h3>contact info</h3>
+                    <a href="#">+123-456-7890</a>
+                    <a href="#">ChineseRestaurant@warwick.ac.uk</a>
+                    <a href="#">coventry, UK</a>
+                </div>
+
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="#">facebook</a>
+                    <a href="#">twitter</a>
+                    <a href="#">instagram</a>
+                    <a href="#">linkedin</a>
+                </div>
+
+            </div>
+
+            <div class="credit"> copyright @ 2024 by <span>PMA</span> </div>
+
+        </section>
+
+    </div>
+
+    <!-- footer section ends -->
+
+    <!-- loader part  -->
+    <!-- <div class="loader-container">
+    <img src="images/loader.gif" alt="">
+</div> -->
 
 
 
-                                                                        </section>
-                                                                        <script
-                                                                            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-                                                                        <script src="js/script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
